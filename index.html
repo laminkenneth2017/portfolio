@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Section</title>
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<style>
+  .about-section {
+    text-align: center;
+    padding: 50px 0;
+  }
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  .about-section img {
+    width: 200px; /* Adjust the size as needed */
+    height: 200px;
+    border-radius: 50%; /* Makes the image round */
+    margin-bottom: 20px;
+  }
+  .about-section p {
+    color: #eaebe8;
+  }
+  .about-section {
+  background-color: #080808; /* Dark Blue */
+  color: white; /* Ensures text remains readable */
+}
+
+  /* Additional CSS for Projects Section */
+.projects-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.card {
+  box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Adds a subtle shadow around the card */
+}
+.card-img-top {
+  max-height: 180px; /* Adjust this value to fit the image properly in the card */
+  object-fit: cover; /* This makes sure the image covers the area properly */
+}
+.card-body {
+  padding: 15px;
+}
+.card-title {
+  font-size: 1.25rem;
+}
+.card-text {
+  margin-bottom: 15px;
+}
+
+/* Additional CSS for Skills Section */
+.skills-section h2 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+.skills-section .card {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.skills-section .card-img-top {
+  padding: 20px; /* Add padding around your images if needed */
+  background-color: #f8f9fa; /* Adjust the background color if your images have transparent areas */
+  height: 180px; /* Fixed height for consistency */
+  object-fit: contain; /* This will make sure the image is scaled properly within the container */
+}
+.skills-section .card-body {
+  padding: 15px;
+}
+.skills-section .card-title {
+  font-size: 1.25rem;
+  margin-bottom: 15px;
+}
+.skills-section .btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+}
+.skills-section .btn-outline-primary:hover {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+/* Additional CSS for Contact Section */
+.contact-section {
+  padding: 50px 0;
+}
+.contact-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+.contact-section p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+.social-icon {
+  width: 50px; /* Size of your icons */
+  margin-bottom: 10px;
+}
+/* Hover effect for icons */
+.social-icon:hover {
+  opacity: 0.7;
+}
+/* Style for links in the Contact section */
+.contact-section a {
+  color: #fff;
+  text-decoration: none; /* Removes underline from links */
+  display: inline-block; /* Allows for margin on the bottom */
+  margin-bottom: 10px;
+}
+.contact-section a:hover {
+  color: #ddd; /* Color when hovering over the link */
+}
+
+/* CSS for Sticky Navbar */
+.navbar {
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Adds a shadow for depth */
+}
+
+/* Ensure padding is added to body to avoid content being hidden behind the navbar */
+body { 
+  padding-top: 56px; /* Adjust this value based on the height of your navbar */
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar links */
+.navbar-nav .nav-link {
+  color: white;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #f8f9fa; /* Slightly lighter white when hovering over links */
+}
+
+/* Media query for responsive navbar collapsing */
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background-color: #343a40; /* Same as navbar color for seamless look */
+  }
+}
+
+
+</style>
+
+</head>
+<body>
+
+<section id='about' class="about-section">
+  <div class="container">
+    <h2>About</h2>
+    <img src="IMAGES/my pic.jpg" alt="About Me">
+    <p>As a seasoned analyst with a Master of Science in Business Analytics, I specialize in transforming complex data into actionable insights to drive impactful decision-making. With expertise in tools like Python, Tableau, Power BI, SQL, and advanced Excel, I have delivered dynamic dashboards and reports, enhancing financial modeling, liquidity risk analysis, and operational efficiency. My professional journey includes roles in corporate finance and market risk analysis, where I consistently identified trends, improved workflows, and ensured data accuracy for stakeholders. My ability to present complex insights in accessible ways has been instrumental in achieving alignment across diverse teams and management levels.</p>
+    <p>Throughout my career, I’ve demonstrated a passion for optimization and collaboration. From conducting cost-basis analyses for securities and improving payroll accuracy to generating liquidity risk reports for senior leadership, I have consistently delivered value in fast-paced environments. With certifications in Spreadsheet Modeling and Bloomberg Market Concepts, I bring a well-rounded skill set and a dedication to continuous learning. I thrive in dynamic settings, leveraging my analytical expertise and communication skills to contribute meaningfully to organizational success.</p>
+  </div>
+</section>
+
+
+<!-- Projects Section -->
+<section id="projects" class="projects-section bg-light" id="projects">
+  <div class="container">
+    <h2 class="text-center">Projects</h2>
+    <div class="row">
+      <!-- Project: Order Cancellation and Return Prediction For Consumer Electronics -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="IMAGES/11.webp" class="card-img-top" alt="Project: Order Cancellation and Return Prediction For Consumer Electronics">
+          <div class="card-body">
+            <h5 class="card-title">Project: Order Cancellation and Return Prediction For Consumer Electronics</h5>
+            <p class="card-text">This project aims to develop a machine learning model to predict the completion status of orders based on transaction data. The predictive model will help to identify factors influencing order completion, enabling better-targeted marketing strategies using clssification techniques such as logistic regression, decision tree, and random forest to provide actionable insights.</p>
+            <a href="https://github.com/laminkenneth2017/Cancellation-Prediction" class="btn btn-primary">Source Code Analysis</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="IMAGES/22.jpg" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project: Analyzing TEDx Talks – What Makes a Talk Popular?</h5>
+            <p class="card-text">This project aims to analyze TEDx talks to determine the factors that make a talk popular. Using Power BI for data visualization, the project explores relationships between ratings, views, comments, talk duration, publication dates, and speaker influence to provide insights for future speakers looking to maximize engagement.</p>
+            <a href="https://github.com/laminkenneth2017/TEDx-Talk-Analysis"  class="btn btn-primary">Source Analysis</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="IMAGES/33.jpg" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project: Financial Market Analysis and Investment Recommendations</h5>
+            <p class="card-text">This project analyzes financial market trends and investment opportunities using Tableau to visualize and interpret key data insights. The analysis focuses on identifying top-performing mutual funds and ETFs across five key categories to maximize potential returns. By leveraging Tableau, we provided a comprehensive evaluation of market behavior from 2020 to 2022, offering data-driven investment recommendations.</p>
+            <a href="https://github.com/laminkenneth2017/Financial-Market-Analysis" class="btn btn-primary">Source Analysis</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="skills-section bg-white" id="skills">
+  <div class="container">
+    <h2 class="text-center">Skills</h2>
+    <div class="row">
+      <!-- Skill 1 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="IMAGES/DATA VISUALIZATION.png" class="card-img-top" alt="Data Visualization">
+          <div class="card-body">
+            <h5 class="card-title">Data Visualization</h5>
+            <p class="card-text">Passionate about transforming raw data into meaningful visual stories using tools like Tableau, Power BI, and Python. Proficient in designing clean, engaging, and user-friendly visualizations that cater to diverse audiences. My portfolio reflects expertise in delivering insights that drive impactful decision-making.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 2 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="IMAGES/POWER BI.webp" class="card-img-top" alt="POWER BI">
+          <div class="card-body">
+            <h5 class="card-title">POWER BI</h5>
+            <p class="card-text">Expert in creating interactive dashboards and reports with Power BI to provide actionable insights for business decisions. Skilled in integrating diverse datasets and applying advanced DAX functions for dynamic data modeling. My Power BI projects demonstrate the ability to simplify complex data and deliver impactful visualizations.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 3 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="IMAGES/PYTHON.png" class="card-img-top" alt="PYTHON">
+          <div class="card-body">
+            <h5 class="card-title">PYTHON</h5>
+            <p class="card-text">Proficient in leveraging Python for data analysis, automation, and machine learning applications. Experienced in using libraries like PySpark, Pandas, NumPy, and Matplotlib to clean, analyze, and visualize data effectively. My Python projects highlight my ability to solve real-world problems with efficient and scalable solutions.</p>
+            
+          </div>
+        </div>
+      </div>
+      <!-- Skill 4 -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="card">
+          <img src="IMAGES/TABLEAU.png" class="card-img-top" alt="TABLEAU">
+          <div class="card-body">
+            <h5 class="card-title">TABLEAU</h5>
+            <p class="card-text">Advanced Tableau user specializing in developing intuitive dashboards that communicate data insights clearly. Skilled in creating interactive visualizations and performing deep-dive analyses to uncover trends and patterns. My Tableau portfolio showcases innovative solutions tailored to business needs across diverse industries.</p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Me Section -->
+<section id="contact" class="contact-section text-center text-white bg-dark">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <div class="row">
+      <div class="col-lg-6">
+        <p><i class="fas fa-envelope"></i> laminkenneth@gmail.com</p>
+      </div>
+      <div class="col-lg-6">
+        <p><i class="fas fa-phone"></i> 240-342-9132</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://www.linkedin.com/in/kenneth-lamin/" target="_blank">
+          <img src="IMAGES/linkedin.png" alt="LinkedIn" class="social-icon">
+          LinkedIn
+        </a>
+      
+      </div>
+      <div class="col-lg-2 col-md-4 mb-4">
+        <a href="https://github.com/laminkenneth2017" target="_blank">
+          <img src="IMAGES/github (1).png" alt="GitHub" class="social-icon">
+          GitHub
+        </a>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<!-- Sticky Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#skills">Skills</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Bootstrap JS and dependencies (jQuery and Popper) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
